@@ -19,7 +19,7 @@ sleep 5 #In case
 echo "Will run diff fetcher"
 
 #run the diff fetcher
-$BINDIR/fetch_osc_and_apply.sh $REPLICATE_SERVER --meta=yes &
+# $BINDIR/fetch_osc_and_apply.sh $REPLICATE_SERVER --meta=yes &
 
 
 #AREAS
