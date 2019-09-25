@@ -5,7 +5,7 @@
 #===================================
 
 #Where to store the database (without using a docker volume) in your server:
-OVERPASS_DB_DIR=/mnt/ssd/overpass_DB
+OVERPASS_DB_DIR=~/docker-overpass-api/overpass_db
 
 #On which server TCP port the API should be available ?
 # i.e., the API will be accessible on http://YOUR_SERVER_IP:[PORT]/api
@@ -29,7 +29,10 @@ REPLICATE_SERVER=http://planet.osm.org/replication/minute
 #Where to fetch the planet file from ?
 #ftp.gwdg.de is fast in europe. If you are network-far away, you can change this
 #url. Keep in mind that the file is ~50GB
-PLANET_FILE="http://ftp.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/planet/planet-latest.osm.bz2"
+#PLANET_FILE="http://localhost/planet/iraq-latest.osm.bz2"
+
+PLANET_FILE="https://download.geofabrik.de/asia/iraq-latest.osm.bz2"
+
 
 #Planet file for zurich, switzerland, in case you want to have a small before before exporting the whole Earth.
 #PLANET_FILE="https://s3.amazonaws.com/metro-extracts.mapzen.com/zurich_switzerland.osm.bz2"
