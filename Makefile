@@ -1,5 +1,5 @@
 include conf.sh
-run: build
+run:
 	docker run -d \
 	--restart=always \
 	-v $(OVERPASS_DB_DIR):/overpass_DB \
