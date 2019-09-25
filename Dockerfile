@@ -55,6 +55,8 @@ ADD www /www
 
 RUN useradd overpass_api
 
+RUN ["chmod", "+x", "launch_overpass.sh"]
+RUN ["chmod", "-R" ,"+x", "/Overpass-API"]
 CMD ["/run.sh"]
 
 VOLUME "/overpass_DB"
